@@ -65,6 +65,12 @@ export default Vue.extend({
     ContactForm
   },
 
+  data() {
+    return {
+      template: null
+    }
+  },
+
   head (): object {
     const name = this.$i18n.t('vuejs-jp-ug') as string
     const title = this.$i18n.t('menu.contact') as string
