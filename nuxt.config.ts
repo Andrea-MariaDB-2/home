@@ -16,8 +16,14 @@ const config: NuxtConfig = {
 
   buildModules: [
     '@nuxt/typescript-build',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxt/bridge'
   ],
+
+  bridge: {
+    nitro: true,
+    // vite: true
+  },
 
   head: {
     htmlAttrs: {
